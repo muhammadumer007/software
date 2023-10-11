@@ -1,14 +1,16 @@
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import SignUp from "../Screens/Signup"
 import Login from "../Screens/Login"
-import DashboardScreen from "../Screens/Dashboard"
+
+
+import DashboardPage from "../Screens/institues/Dashboard"
 export default function Routting(){
     return<>
     <Router>
         <Routes>
             <Route path="/ " element={<SignUp/>}/>
             <Route path="/login" element={<Login/>}/>
-            <Route path="/dashboard" element={<DashboardScreen/>}/>
+                <Route path="/Dashboardpage" element={< DashboardPage/>}/>
         </Routes>
     </Router>
     </>
